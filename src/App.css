@@ -1,0 +1,118 @@
+.App {
+  text-align: center;
+  background-color: grey;
+  min-height: 100vh;
+  color:#fff;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  padding:30px 0;
+}
+.grope{
+  display: flex;
+}
+.grope .space{
+  margin-left: 30px;
+}
+.App-header form {
+  display: flex;
+}
+.App-header input[type=text] {
+  border: 1px solid #ccc;
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+  float: none;
+  display: block;
+  text-align: left;
+  width: 100%;
+  margin: 0;
+  color:#000
+}
+.App-header input[type=text]:focus{
+  outline: none;
+  background: #efefef;
+}
+.App-header button {
+  float: right;
+  padding: 6px 10px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+.App-header button:hover{
+  background: #007bff;
+  color: #fff;
+}
+.rating-search .rate{
+  display: flex;
+  justify-content: space-around;
+}
+.rating-search .rate span{
+  cursor: pointer;
+}
+.rate span{
+  font-size: 20px;
+}
+.card-text a{
+  color: #595b5f;
+    font-size: 18px;
+    display: inline-block;
+    padding: 5px;
+    background: #dddddd;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: all 0.4s;
+    text-decoration: none;
+}
+.card-text a:hover{
+  background: #007bff;
+  color:#fff;
+}
+.App-link {
+  color: #61dafb;
+}
+.movie .listMovies{
+  display: grid;
+  grid-template-columns: repeat(4,25%);
+}
+.listMovies .card .card-body{
+  background: #595b5f;
+}
+.card-title{
+  font-size: 26px;
+  font-weight: bold;
+}
+p{
+  margin: 0;
+}
+.movie img{
+  max-width: 100%;
+}
+.modal-body label{
+  min-width: 90px;
+}
+.movie .listMovies .card{
+  background-color: none !important;
+}
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
